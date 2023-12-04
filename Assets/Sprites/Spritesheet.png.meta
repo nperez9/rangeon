@@ -493,7 +493,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_17
+      name: StoneTopLeft
       rect:
         serializedVersion: 2
         x: 306
@@ -514,7 +514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_18
+      name: StoneTop
       rect:
         serializedVersion: 2
         x: 323
@@ -535,7 +535,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_19
+      name: StoneTopRight
       rect:
         serializedVersion: 2
         x: 340
@@ -1501,7 +1501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_65
+      name: StoneLeft
       rect:
         serializedVersion: 2
         x: 306
@@ -1522,7 +1522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_66
+      name: Stone
       rect:
         serializedVersion: 2
         x: 323
@@ -1543,7 +1543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_67
+      name: StoneRight
       rect:
         serializedVersion: 2
         x: 340
@@ -2509,7 +2509,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_113
+      name: StoneBottomLeft
       rect:
         serializedVersion: 2
         x: 306
@@ -2530,7 +2530,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_114
+      name: StoneBottom
       rect:
         serializedVersion: 2
         x: 323
@@ -2551,7 +2551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_115
+      name: StoneBottomRight
       rect:
         serializedVersion: 2
         x: 340
@@ -11035,7 +11035,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_519
+      name: HearthEmpty
       rect:
         serializedVersion: 2
         x: 680
@@ -11056,7 +11056,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_520
+      name: HearthHalf
       rect:
         serializedVersion: 2
         x: 697
@@ -11077,7 +11077,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_521
+      name: Hearth
       rect:
         serializedVersion: 2
         x: 714
@@ -19309,7 +19309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_913
+      name: Tower
       rect:
         serializedVersion: 2
         x: 34
@@ -20317,7 +20317,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_961
+      name: Piramid
       rect:
         serializedVersion: 2
         x: 34
@@ -22305,12 +22305,16 @@ TextureImporter:
       Cactuses: 397390988
       Catus: -1184837390
       Crab: -2143229980
+      Hearth: 535552372
+      HearthEmpty: 368053408
+      HearthHalf: -1211214019
       Necromancer: -1312330677
       Pine: 552360729
       Pine_Big: 1136297899
       Pine_Chrismas: 1766741605
       Pine_triangle: -473557161
       Pines: -362840832
+      Piramid: -1471834784
       Player_Lance: 1977522666
       Player_Sword: -1340803214
       Scorpion: 770295083
@@ -22389,9 +22393,6 @@ TextureImporter:
       Spritesheet_110: -133064718
       Spritesheet_111: 1931951310
       Spritesheet_112: 1460999987
-      Spritesheet_113: 1162725257
-      Spritesheet_114: 1318721838
-      Spritesheet_115: -691544765
       Spritesheet_116: -741957961
       Spritesheet_117: -1730937462
       Spritesheet_118: 2025846936
@@ -22451,7 +22452,6 @@ TextureImporter:
       Spritesheet_167: -1072411262
       Spritesheet_168: -79327872
       Spritesheet_169: 1071643259
-      Spritesheet_17: -713655257
       Spritesheet_170: -1021386813
       Spritesheet_171: 1240769653
       Spritesheet_172: 1129366625
@@ -22462,7 +22462,6 @@ TextureImporter:
       Spritesheet_177: 697571736
       Spritesheet_178: 173751131
       Spritesheet_179: -1490811155
-      Spritesheet_18: 481484429
       Spritesheet_180: -610691882
       Spritesheet_181: -1931127100
       Spritesheet_182: 2006906302
@@ -22473,7 +22472,6 @@ TextureImporter:
       Spritesheet_187: 717383112
       Spritesheet_188: 1390683296
       Spritesheet_189: -1342884828
-      Spritesheet_19: 1135658188
       Spritesheet_190: 1894059678
       Spritesheet_191: 1602676598
       Spritesheet_192: 1778976579
@@ -22827,9 +22825,6 @@ TextureImporter:
       Spritesheet_516: 381899773
       Spritesheet_517: 623811066
       Spritesheet_518: -2036213406
-      Spritesheet_519: 368053408
-      Spritesheet_520: -1211214019
-      Spritesheet_521: 535552372
       Spritesheet_522: -922986716
       Spritesheet_523: -1966294654
       Spritesheet_524: 443716751
@@ -22966,7 +22961,6 @@ TextureImporter:
       Spritesheet_647: 212848857
       Spritesheet_648: 1598559040
       Spritesheet_649: -1902103626
-      Spritesheet_65: 1619648971
       Spritesheet_650: -749845979
       Spritesheet_651: -1394373390
       Spritesheet_652: 417732187
@@ -22977,7 +22971,6 @@ TextureImporter:
       Spritesheet_657: 1576096493
       Spritesheet_658: 831194981
       Spritesheet_659: -1138288400
-      Spritesheet_66: -314150413
       Spritesheet_660: 1318624071
       Spritesheet_661: -605163689
       Spritesheet_662: 1618217118
@@ -22988,7 +22981,6 @@ TextureImporter:
       Spritesheet_667: -1946685075
       Spritesheet_668: 453451201
       Spritesheet_669: 81581447
-      Spritesheet_67: 463109071
       Spritesheet_670: -403865252
       Spritesheet_671: -1920787185
       Spritesheet_672: -698838060
@@ -23250,7 +23242,6 @@ TextureImporter:
       Spritesheet_910: 136843405
       Spritesheet_911: 809787421
       Spritesheet_912: 2090023043
-      Spritesheet_913: -314957898
       Spritesheet_914: 1693348363
       Spritesheet_915: -646052314
       Spritesheet_916: 816847104
@@ -23303,7 +23294,6 @@ TextureImporter:
       Spritesheet_959: 1690636508
       Spritesheet_96: -1836843718
       Spritesheet_960: -97335075
-      Spritesheet_961: -1471834784
       Spritesheet_962: 1265263308
       Spritesheet_963: 1325419849
       Spritesheet_964: 1928848312
@@ -23345,6 +23335,16 @@ TextureImporter:
       Spritesheet_997: -782904621
       Spritesheet_998: -797984912
       Spritesheet_999: 274333882
+      Stone: -314150413
+      StoneBottom: 1318721838
+      StoneBottomLeft: 1162725257
+      StoneBottomRight: -691544765
+      StoneLeft: 1619648971
+      StoneRight: 463109071
+      StoneTop: 481484429
+      StoneTopLeft: -713655257
+      StoneTopRight: 1135658188
+      Tower: -314957898
       Tree_Cube: -1579164802
       Turtle: -1271423233
       WallCorner_BottomLeft: 782499665
