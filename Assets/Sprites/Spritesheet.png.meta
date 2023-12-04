@@ -703,7 +703,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_27
+      name: Player_Sword
       rect:
         serializedVersion: 2
         x: 476
@@ -1123,7 +1123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_47
+      name: Pine_triangle
       rect:
         serializedVersion: 2
         x: 0
@@ -1144,7 +1144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_48
+      name: Pine_Chrismas
       rect:
         serializedVersion: 2
         x: 17
@@ -1165,7 +1165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_49
+      name: Pine
       rect:
         serializedVersion: 2
         x: 34
@@ -1186,7 +1186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_50
+      name: Pines
       rect:
         serializedVersion: 2
         x: 51
@@ -1207,7 +1207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_51
+      name: Pine_Big
       rect:
         serializedVersion: 2
         x: 68
@@ -1228,7 +1228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_52
+      name: Tree_Cube
       rect:
         serializedVersion: 2
         x: 85
@@ -1249,7 +1249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_53
+      name: Catus
       rect:
         serializedVersion: 2
         x: 102
@@ -1270,7 +1270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_54
+      name: Cactuses
       rect:
         serializedVersion: 2
         x: 119
@@ -1627,7 +1627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_71
+      name: Necromancer
       rect:
         serializedVersion: 2
         x: 408
@@ -5659,7 +5659,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_263
+      name: Scorpion
       rect:
         serializedVersion: 2
         x: 408
@@ -5680,7 +5680,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_264
+      name: Crab
       rect:
         serializedVersion: 2
         x: 425
@@ -5701,7 +5701,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_265
+      name: Bug
       rect:
         serializedVersion: 2
         x: 442
@@ -5722,7 +5722,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_266
+      name: Turtle
       rect:
         serializedVersion: 2
         x: 459
@@ -5743,7 +5743,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_267
+      name: Spider
       rect:
         serializedVersion: 2
         x: 476
@@ -13555,7 +13555,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_639
+      name: Wall_CornerTopLeft
       rect:
         serializedVersion: 2
         x: 272
@@ -13576,7 +13576,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_640
+      name: Wall_Top
       rect:
         serializedVersion: 2
         x: 289
@@ -13597,7 +13597,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_641
+      name: WallCorner_TopRight
       rect:
         serializedVersion: 2
         x: 306
@@ -14563,7 +14563,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_687
+      name: Wall_Left
       rect:
         serializedVersion: 2
         x: 272
@@ -14605,7 +14605,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_689
+      name: Wall_Right
       rect:
         serializedVersion: 2
         x: 306
@@ -15235,7 +15235,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_719
+      name: Skull
       rect:
         serializedVersion: 2
         x: 0
@@ -15256,7 +15256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_720
+      name: Skull_Bull
       rect:
         serializedVersion: 2
         x: 17
@@ -15277,7 +15277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_721
+      name: Web
       rect:
         serializedVersion: 2
         x: 34
@@ -15571,7 +15571,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_735
+      name: WallCorner_BottomLeft
       rect:
         serializedVersion: 2
         x: 272
@@ -15592,7 +15592,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_736
+      name: Wall_Bottom
       rect:
         serializedVersion: 2
         x: 289
@@ -15613,7 +15613,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_737
+      name: WallCorner_BottomRight
       rect:
         serializedVersion: 2
         x: 306
@@ -22301,7 +22301,22 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Bug: -135529767
+      Cactuses: 397390988
+      Catus: -1184837390
+      Crab: -2143229980
+      Necromancer: -1312330677
+      Pine: 552360729
+      Pine_Big: 1136297899
+      Pine_Chrismas: 1766741605
+      Pine_triangle: -473557161
+      Pines: -362840832
       Player_Lance: 1977522666
+      Player_Sword: -1340803214
+      Scorpion: 770295083
+      Skull: 1691541806
+      Skull_Bull: 1850880981
+      Spider: -652156564
       Spritesheet_0: 481626088
       Spritesheet_1: -922339079
       Spritesheet_10: 692629788
@@ -22540,14 +22555,8 @@ TextureImporter:
       Spritesheet_260: -115993996
       Spritesheet_261: 526526500
       Spritesheet_262: -811968395
-      Spritesheet_263: 770295083
-      Spritesheet_264: -2143229980
-      Spritesheet_265: -135529767
-      Spritesheet_266: -1271423233
-      Spritesheet_267: -652156564
       Spritesheet_268: 1352563340
       Spritesheet_269: 1672237725
-      Spritesheet_27: -1340803214
       Spritesheet_270: 1438148530
       Spritesheet_271: 876346618
       Spritesheet_272: -781915296
@@ -22768,7 +22777,6 @@ TextureImporter:
       Spritesheet_467: 1548098151
       Spritesheet_468: 2087332397
       Spritesheet_469: -785602351
-      Spritesheet_47: -473557161
       Spritesheet_470: -872223596
       Spritesheet_471: -709941483
       Spritesheet_472: -318642532
@@ -22779,7 +22787,6 @@ TextureImporter:
       Spritesheet_477: 1332716603
       Spritesheet_478: -1736956190
       Spritesheet_479: 348938564
-      Spritesheet_48: 1766741605
       Spritesheet_480: 327310771
       Spritesheet_481: -1186112876
       Spritesheet_482: -1744773485
@@ -22790,7 +22797,6 @@ TextureImporter:
       Spritesheet_487: 1949701667
       Spritesheet_488: -236549946
       Spritesheet_489: 619544765
-      Spritesheet_49: 552360729
       Spritesheet_490: 2119655556
       Spritesheet_491: -460315559
       Spritesheet_492: 996783487
@@ -22802,7 +22808,6 @@ TextureImporter:
       Spritesheet_498: -1156722391
       Spritesheet_499: 1051462269
       Spritesheet_5: -272152575
-      Spritesheet_50: -362840832
       Spritesheet_500: 148073450
       Spritesheet_501: -2141555005
       Spritesheet_502: -246959506
@@ -22813,7 +22818,6 @@ TextureImporter:
       Spritesheet_507: -2071465893
       Spritesheet_508: -1710735881
       Spritesheet_509: 2066405672
-      Spritesheet_51: 1136297899
       Spritesheet_510: 277279052
       Spritesheet_511: -931455212
       Spritesheet_512: -4606261
@@ -22824,7 +22828,6 @@ TextureImporter:
       Spritesheet_517: 623811066
       Spritesheet_518: -2036213406
       Spritesheet_519: 368053408
-      Spritesheet_52: -1579164802
       Spritesheet_520: -1211214019
       Spritesheet_521: 535552372
       Spritesheet_522: -922986716
@@ -22835,7 +22838,6 @@ TextureImporter:
       Spritesheet_527: -1348038010
       Spritesheet_528: 60012568
       Spritesheet_529: 1741915076
-      Spritesheet_53: -1184837390
       Spritesheet_530: 1629936593
       Spritesheet_531: 992961215
       Spritesheet_532: -785287502
@@ -22846,7 +22848,6 @@ TextureImporter:
       Spritesheet_537: 504727472
       Spritesheet_538: -1055450232
       Spritesheet_539: 1502834591
-      Spritesheet_54: 397390988
       Spritesheet_540: -1753131167
       Spritesheet_541: 1643145819
       Spritesheet_542: 1953434283
@@ -22956,10 +22957,7 @@ TextureImporter:
       Spritesheet_636: -214309477
       Spritesheet_637: 323139336
       Spritesheet_638: -124661161
-      Spritesheet_639: -18555850
       Spritesheet_64: -741532754
-      Spritesheet_640: 31858331
-      Spritesheet_641: 1445036213
       Spritesheet_642: 1764267161
       Spritesheet_643: -1211690563
       Spritesheet_644: -1150036751
@@ -23009,9 +23007,7 @@ TextureImporter:
       Spritesheet_684: -2143963119
       Spritesheet_685: 1379646459
       Spritesheet_686: 562820936
-      Spritesheet_687: 538872845
       Spritesheet_688: -504522817
-      Spritesheet_689: -1377541345
       Spritesheet_69: -122150410
       Spritesheet_690: -1049425195
       Spritesheet_691: -693619128
@@ -23035,7 +23031,6 @@ TextureImporter:
       Spritesheet_707: 1497956786
       Spritesheet_708: -1559423977
       Spritesheet_709: -920731241
-      Spritesheet_71: -1312330677
       Spritesheet_710: 383555176
       Spritesheet_711: 398962576
       Spritesheet_712: -245845566
@@ -23045,10 +23040,7 @@ TextureImporter:
       Spritesheet_716: -65218933
       Spritesheet_717: -402569202
       Spritesheet_718: -1318207670
-      Spritesheet_719: 1691541806
       Spritesheet_72: 1947131963
-      Spritesheet_720: 1850880981
-      Spritesheet_721: 1064321775
       Spritesheet_722: -358333482
       Spritesheet_723: -495912863
       Spritesheet_724: 985272921
@@ -23063,9 +23055,6 @@ TextureImporter:
       Spritesheet_732: 1989120535
       Spritesheet_733: 1620292794
       Spritesheet_734: -1023440942
-      Spritesheet_735: 782499665
-      Spritesheet_736: 1331219080
-      Spritesheet_737: -822955735
       Spritesheet_738: -213299166
       Spritesheet_739: 603572403
       Spritesheet_74: 1949159861
@@ -23356,6 +23345,17 @@ TextureImporter:
       Spritesheet_997: -782904621
       Spritesheet_998: -797984912
       Spritesheet_999: 274333882
+      Tree_Cube: -1579164802
+      Turtle: -1271423233
+      WallCorner_BottomLeft: 782499665
+      WallCorner_BottomRight: -822955735
+      WallCorner_TopRight: 1445036213
+      Wall_Bottom: 1331219080
+      Wall_CornerTopLeft: -18555850
+      Wall_Left: 538872845
+      Wall_Right: -1377541345
+      Wall_Top: 31858331
+      Web: 1064321775
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
