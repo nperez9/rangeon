@@ -5,16 +5,16 @@ using UnityEngine;
 public class RoomsManager : MonoBehaviour
 {
     [Header("Door Objects")]
-    [SerializeField] private Transform nortDoor;
-    [SerializeField] private Transform southDoor;
-    [SerializeField] private Transform eastDoor;
-    [SerializeField] private Transform westDoor;
+    [SerializeField] public Transform nortDoor;
+    [SerializeField] public Transform southDoor;
+    [SerializeField] public Transform eastDoor;
+    [SerializeField] public Transform westDoor;
 
     [Header("Walls")]
-    [SerializeField] private Transform nortWall;
-    [SerializeField] private Transform southWall;
-    [SerializeField] private Transform eastWall;
-    [SerializeField] private Transform westWall;
+    [SerializeField] public Transform nortWall;
+    [SerializeField] public Transform southWall;
+    [SerializeField] public Transform eastWall;
+    [SerializeField] public Transform westWall;
 
     [Header("Values")]
     public int insideWidth;

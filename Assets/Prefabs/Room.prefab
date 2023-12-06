@@ -55,12 +55,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nortDoor: {fileID: 6510394702196361307}
   southDoor: {fileID: 6304062546060721096}
-  eastDoor: {fileID: 4891849184910845775}
-  westDoor: {fileID: 3005384598659504124}
+  eastDoor: {fileID: 3005384598659504124}
+  westDoor: {fileID: 4891849184910845775}
   nortWall: {fileID: 3486719368999716668}
   southWall: {fileID: 110857604179637189}
-  eastWall: {fileID: 644982172292915876}
-  westWall: {fileID: 662966416378695034}
+  eastWall: {fileID: 662966416378695034}
+  westWall: {fileID: 644982172292915876}
   insideWidth: 7
   insideHeight: 7
   enemyPrefab: {fileID: 0}
@@ -343,7 +343,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6510394702196361307
 Transform:
   m_ObjectHideFlags: 0
@@ -1187,12 +1187,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4891849184910845775}
   m_Layer: 0
-  m_Name: EastDoor
+  m_Name: WestDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4891849184910845775
 Transform:
   m_ObjectHideFlags: 0
@@ -2963,12 +2963,12 @@ GameObject:
   m_Component:
   - component: {fileID: 3005384598659504124}
   m_Layer: 0
-  m_Name: WestDoor
+  m_Name: EastDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3005384598659504124
 Transform:
   m_ObjectHideFlags: 0
@@ -5632,7 +5632,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644982172292915876}
   m_Layer: 0
-  m_Name: EastWall
+  m_Name: WestWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6191,7 +6191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6304062546060721096
 Transform:
   m_ObjectHideFlags: 0
@@ -6351,7 +6351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 662966416378695034}
   m_Layer: 0
-  m_Name: WestWall
+  m_Name: EastWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
