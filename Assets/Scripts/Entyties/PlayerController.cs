@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -60,21 +61,72 @@ public class PlayerController : MonoBehaviour
 
     public void OnAttackUp(InputAction.CallbackContext context)
     {
-
+        if (context.phase == InputActionPhase.Performed)
+        {
+            Move(Vector2.left);
+        }
     }
 
     public void OnAttackLeft(InputAction.CallbackContext context)
     {
-
+        if (context.phase == InputActionPhase.Performed)
+        {
+            Move(Vector2.left);
+        }
     }
 
     public void OnAttackRight(InputAction.CallbackContext context)
     {
-
+        if (context.phase == InputActionPhase.Performed)
+        {
+            Move(Vector2.left);
+        }
     }
 
     public void OnAttackDown(InputAction.CallbackContext context)
     {
+        if (context.phase == InputActionPhase.Performed)
+        {
+            Move(Vector2.left);
+        }
+    }
 
+    public void TakeDamage(int damage)
+    {
+        currentHP -= damage;
+        StartCoroutine(DamageFlash());
+
+        if (currentHP <= 0)
+        {
+            StartCoroutine(GameOver());
+        }
+    }
+
+    IEnumerator DamageFlash()
+    {
+        Color defaultColor = sprite.color;
+        sprite.color = Color.white;
+
+        yield return new WaitForSeconds(0.25f);
+
+        sprite.color = defaultColor;
+    }
+
+    IEnumerator GameOver()
+    {
+        // TODO play death musci
+        yield return new WaitForSeconds(0.1f);    
+
+        sprite.flipY = true;
+        sprite.color = Color.gray;
+
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(0);
+    }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
     }
 }

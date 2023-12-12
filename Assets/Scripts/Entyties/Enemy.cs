@@ -10,6 +10,9 @@ public class Enemy : MonoBehaviour
     public GameObject deathDropPrefab;
     public SpriteRenderer sr;
 
+    public float attackChance = 0.5f;
+
+
     public LayerMask moveLayerMask;
 
     void Start()
@@ -77,6 +80,11 @@ public class Enemy : MonoBehaviour
         }
 
         StartCoroutine(DamageFlash());
+
+        if (Random.value < attackChance)
+        {
+            player.TakeDamage(damage);
+        }
     }
 
     private void OnDestroy()
