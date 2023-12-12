@@ -215,10 +215,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 7367896714528603560}
-  health: 2
+  health: 20
   damage: 1
   deathDropPrefab: {fileID: 0}
-  sr: {fileID: 0}
+  sr: {fileID: 1896395752}
   attackChance: 0.5
   moveLayerMask:
     serializedVersion: 2
@@ -323,7 +323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1910211140
 Transform:
   m_ObjectHideFlags: 0

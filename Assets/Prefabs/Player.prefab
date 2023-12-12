@@ -229,9 +229,11 @@ MonoBehaviour:
   maxHP: 7
   coins: 0
   hasKey: 0
+  damage: 1
   moveLayerMask:
     serializedVersion: 2
     m_Bits: 192
+  sprite: {fileID: 5243177914293218648}
 --- !u!50 &5432767233518680652
 Rigidbody2D:
   serializedVersion: 4

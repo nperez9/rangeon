@@ -10,11 +10,12 @@ public class PlayerController : MonoBehaviour
     public int maxHP;
     public int coins;
     public bool hasKey;
+    public int damage = 1;
 
     // the layers you can collide 
     public LayerMask moveLayerMask;
 
-    private SpriteRenderer sprite;
+    [SerializeField] private SpriteRenderer sprite;
     
     private void Move (Vector2 dir)
     {
@@ -23,6 +24,8 @@ public class PlayerController : MonoBehaviour
         if (hit.collider == null)
         {
             transform.position += new Vector3(dir.x, dir.y, 0);
+            // Moves the enemy when the player moves
+            EnemyManager.instance.OnPlayerMove();
         }else
         {
             Debug.Log("HITT");
@@ -63,7 +66,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed)
         {
-            Move(Vector2.left);
+            TryAttack(Vector2.up);
         }
     }
 
@@ -71,7 +74,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed)
         {
-            Move(Vector2.left);
+            TryAttack(Vector2.left);
         }
     }
 
@@ -79,7 +82,7 @@ public class PlayerController : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed)
         {
-            Move(Vector2.left);
+            TryAttack(Vector2.right);
         }
     }
 
@@ -87,7 +90,18 @@ public class PlayerController : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed)
         {
-            Move(Vector2.left);
+            TryAttack(Vector2.down);
+        }
+    }
+
+    private void TryAttack(Vector2 dir)
+    {
+        //  only detect layer number 9
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 1.0f, 1 << 7);
+
+        if (hit.collider != null)
+        {
+            hit.transform.GetComponent<Enemy>().TakeDamage(damage);
         }
     }
 
@@ -120,7 +134,7 @@ public class PlayerController : MonoBehaviour
         sprite.flipY = true;
         sprite.color = Color.gray;
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.1f);
 
         SceneManager.LoadScene(0);
     }
