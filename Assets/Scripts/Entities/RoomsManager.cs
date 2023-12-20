@@ -31,7 +31,10 @@ public class RoomsManager : MonoBehaviour
 
     public void GenerateInterior()
     {
-
+        if (Random.value < Generator.instance.enemySpawnChance)
+        {
+            SpawnPrefab(enemyPrefab, 1, Generator.instance.maxEnemiesPerRoom + 1);
+        }
     }
 
     public void SpawnPrefab(GameObject prefab, int min = 0, int max = 0)

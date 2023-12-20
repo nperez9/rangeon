@@ -4000,7 +4000,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_184
+      name: Coin2
       rect:
         serializedVersion: 2
         x: 697
@@ -4609,7 +4609,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_213
+      name: Coin
       rect:
         serializedVersion: 2
         x: 374
@@ -11014,7 +11014,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_518
+      name: Heart_Pickable
       rect:
         serializedVersion: 2
         x: 663
@@ -22304,7 +22304,10 @@ TextureImporter:
       Bug: -135529767
       Cactuses: 397390988
       Catus: -1184837390
+      Coin: -202282120
+      Coin2: -13521169
       Crab: -2143229980
+      Heart_Pickable: -2036213406
       Hearth: 535552372
       HearthEmpty: 368053408
       HearthHalf: -1211214019
@@ -22466,7 +22469,6 @@ TextureImporter:
       Spritesheet_181: -1931127100
       Spritesheet_182: 2006906302
       Spritesheet_183: -1376697469
-      Spritesheet_184: -13521169
       Spritesheet_185: -1499970121
       Spritesheet_186: -1671743459
       Spritesheet_187: 717383112
@@ -22498,7 +22500,6 @@ TextureImporter:
       Spritesheet_210: 1533692848
       Spritesheet_211: 2027828215
       Spritesheet_212: 500219091
-      Spritesheet_213: -202282120
       Spritesheet_214: -905025599
       Spritesheet_215: -1874507990
       Spritesheet_216: 822513435
@@ -22824,7 +22825,6 @@ TextureImporter:
       Spritesheet_515: -576715514
       Spritesheet_516: 381899773
       Spritesheet_517: 623811066
-      Spritesheet_518: -2036213406
       Spritesheet_522: -922986716
       Spritesheet_523: -1966294654
       Spritesheet_524: 443716751

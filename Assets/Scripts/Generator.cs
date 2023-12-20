@@ -9,6 +9,16 @@ public class Generator : MonoBehaviour
     public int roomsToGenerate = 12;
     public GameObject roomPrefab;
 
+    [Header("Spawn Chances")]
+    public float enemySpawnChance = 0.7f;
+    public float coinSpawnChance = 0.8f;
+    public float healthSpawnChance = 0.3f;
+
+    [Header("Max Spawn per Room")]
+    public int maxEnemiesPerRoom = 2;
+    public int maxCoinsPerRoom = 4;
+    public int maxHealthPerRoom = 1;
+
     private int roomCount;
     private bool roomsInstantiated;
 
@@ -67,7 +77,7 @@ public class Generator : MonoBehaviour
         roomCount++;
         map[x, y] = true;
 
-        // it´s reversed, so, if it is 0.2 its 80%
+        // itï¿½s reversed, so, if it is 0.2 its 80%
         bool nort = Random.value > (generalDirection == Vector2.up ? 0.2f : 0.8f);
         bool south = Random.value > (generalDirection == Vector2.down ? 0.2f : 0.8f);
         bool east = Random.value > (generalDirection == Vector2.right ? 0.2f : 0.8f);
@@ -76,8 +86,9 @@ public class Generator : MonoBehaviour
         // calculate the 4 posibble directions
         int maxRemaining = roomsToGenerate / 4;
 
-        if (nort || firstRoom) {
-            CheckRoom(x, y + 1, firstRoom ? maxRemaining : remaining - 1, firstRoom ? Vector2.up : generalDirection);  
+        if (nort || firstRoom)
+        {
+            CheckRoom(x, y + 1, firstRoom ? maxRemaining : remaining - 1, firstRoom ? Vector2.up : generalDirection);
         }
         if (south || firstRoom)
         {
@@ -110,14 +121,15 @@ public class Generator : MonoBehaviour
                 GameObject roomObj = Instantiate(roomPrefab, new Vector3(x, y, 0) * 12, Quaternion.identity);
                 // get a reference to the Room script of the new room object
                 RoomsManager room = roomObj.GetComponent<RoomsManager>();
-                
+
                 // if we're within the boundary of the map, AND if there is room above us
                 if (y < mapHeight - 1 && map[x, y + 1] == true)
                 {
                     // enable the north door and disable the north wall.
                     room.nortDoor.gameObject.SetActive(true);
                     room.nortWall.gameObject.SetActive(false);
-                } else
+                }
+                else
                 {
                     room.nortDoor.gameObject.SetActive(false);
                     room.nortWall.gameObject.SetActive(true);
@@ -131,14 +143,14 @@ public class Generator : MonoBehaviour
                 }
 
                 // West 
-                if (x > 0 && map[x -1, y] == true)
+                if (x > 0 && map[x - 1, y] == true)
                 {
                     room.westDoor.gameObject.SetActive(true);
                     room.westWall.gameObject.SetActive(false);
                 }
 
                 // East
-                if (x < mapWidth - 1  && map[x + 1, y] == true)
+                if (x < mapWidth - 1 && map[x + 1, y] == true)
                 {
                     room.eastDoor.gameObject.SetActive(true);
                     room.eastWall.gameObject.SetActive(false);

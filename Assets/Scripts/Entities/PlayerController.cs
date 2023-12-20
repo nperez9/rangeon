@@ -16,8 +16,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask moveLayerMask;
 
     [SerializeField] private SpriteRenderer sprite;
-    
-    private void Move (Vector2 dir)
+
+    private void Move(Vector2 dir)
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, 1.0f, moveLayerMask);
 
@@ -26,9 +26,6 @@ public class PlayerController : MonoBehaviour
             transform.position += new Vector3(dir.x, dir.y, 0);
             // Moves the enemy when the player moves
             EnemyManager.instance.OnPlayerMove();
-        }else
-        {
-            Debug.Log("HITT");
         }
     }
 
@@ -129,7 +126,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator GameOver()
     {
         // TODO play death musci
-        yield return new WaitForSeconds(0.1f);    
+        yield return new WaitForSeconds(0.1f);
 
         sprite.flipY = true;
         sprite.color = Color.gray;
@@ -142,5 +139,24 @@ public class PlayerController : MonoBehaviour
     private void OnDestroy()
     {
         StopAllCoroutines();
+    }
+
+    public void AddCoins(int amount)
+    {
+        coins += amount;
+        // TODO: update UI
+    }
+
+    public bool AddHealth(int amount)
+    {
+        currentHP += amount;
+
+        if (currentHP > maxHP)
+        {
+            currentHP = maxHP;
+            return false;
+        }
+        return true;
+        // TODO: update UI
     }
 }
