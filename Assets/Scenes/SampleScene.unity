@@ -317,13 +317,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1910211140}
   - component: {fileID: 1910211141}
+  - component: {fileID: 1910211142}
   m_Layer: 0
   m_Name: _GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1910211140
 Transform:
   m_ObjectHideFlags: 0
@@ -346,7 +347,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910211139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e442b9889fea4a24ba7ac324a38a2e3a, type: 3}
   m_Name: 
@@ -355,6 +356,20 @@ MonoBehaviour:
   mapHeight: 7
   roomsToGenerate: 12
   roomPrefab: {fileID: 57825591329417612, guid: f775e9e8f29107e45a40bb1214861741, type: 3}
+--- !u!114 &1910211142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910211139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc1711679d02bf2469784d4a5d8477da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 870467448}
 --- !u!1001 &7367896714528603559
 PrefabInstance:
   m_ObjectHideFlags: 0

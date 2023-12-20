@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public static EnemyManager instance = null;
-    List<Enemy> enemies = new List<Enemy>();
+    [SerializeField] List<Enemy> enemies = new List<Enemy>();
 
     private void Awake()
     {
