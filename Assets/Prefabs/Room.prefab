@@ -63,11 +63,24 @@ MonoBehaviour:
   westWall: {fileID: 644982172292915876}
   insideWidth: 7
   insideHeight: 7
-  enemyPrefab: {fileID: 0}
-  coinPrefab: {fileID: 0}
-  healthPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 2308072634357482823, guid: daedeb4ca156343458c7b28ff26149da, type: 3}
+  coinPrefab: {fileID: 2568984596804179407, guid: 3e769c4eca938bf42820fd3ece3c4eee, type: 3}
+  healthPrefab: {fileID: 6813201419980054805, guid: 1c6c4fcd7ea179947bf89f97870821fe, type: 3}
   keyPrefab: {fileID: 0}
   exitDoorPrefab: {fileID: 0}
+  detailSprites:
+  - {fileID: 1691541806, guid: aacb2d65b31c95a45aeb17aee304697d, type: 3}
+  - {fileID: 1850880981, guid: aacb2d65b31c95a45aeb17aee304697d, type: 3}
+  colorList:
+  - {r: 0.51519865, g: 0.41117835, b: 0.8301887, a: 1}
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 0.6792453, g: 0.37486652, b: 0.6690722, a: 1}
+  - {r: 0.6784314, g: 0.3764706, b: 0.39825037, a: 1}
+  - {r: 0.61153364, g: 0.764151, b: 0.5154415, a: 1}
+  - {r: 0.5137255, g: 0.7647059, b: 0.75667536, a: 1}
+  - {r: 0.5137255, g: 0.55729765, b: 0.7647059, a: 1}
+  - {r: 0.7637941, g: 0.7647059, b: 0.5137255, a: 1}
+  - {r: 0.7647059, g: 0.65234405, b: 0.5137255, a: 1}
 --- !u!1 &136238244589921033
 GameObject:
   m_ObjectHideFlags: 0

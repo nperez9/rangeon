@@ -18,6 +18,7 @@ public class Generator : MonoBehaviour
     public int maxEnemiesPerRoom = 2;
     public int maxCoinsPerRoom = 4;
     public int maxHealthPerRoom = 1;
+    public int maxDetailsPerRoom = 3;
 
     private int roomCount;
     private bool roomsInstantiated;
