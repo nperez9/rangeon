@@ -39,17 +39,17 @@ public class RoomsManager : MonoBehaviour
 
         if (Random.value < Generator.instance.enemySpawnChance)
         {
-            SpawnPrefab(enemyPrefab, 1, Generator.instance.maxEnemiesPerRoom + 1);
+            SpawnRandomPrefabs(enemyPrefab, 1, Generator.instance.maxEnemiesPerRoom + 1);
         }
 
         if (Random.value < Generator.instance.coinSpawnChance)
         {
-            SpawnPrefab(coinPrefab, 1, Generator.instance.maxCoinsPerRoom + 1);
+            SpawnRandomPrefabs(coinPrefab, 1, Generator.instance.maxCoinsPerRoom + 1);
         }
 
         if (Random.value < Generator.instance.healthSpawnChance)
         {
-            SpawnPrefab(healthPrefab, 1, Generator.instance.maxHealthPerRoom + 1);
+            SpawnRandomPrefabs(healthPrefab, 1, Generator.instance.maxHealthPerRoom + 1);
         }
 
         int detailCount = Random.Range(0, Generator.instance.maxDetailsPerRoom + 1);
@@ -59,14 +59,19 @@ public class RoomsManager : MonoBehaviour
         }
     }
 
-    public void SpawnPrefab(GameObject prefab, int min = 0, int max = 0)
+    public void SpawnRandomPrefabs(GameObject prefab, int min = 0, int max = 0)
     {
         int spawnCount = Random.Range(min, max);
         for (int i = 0; i < spawnCount; i++)
         {
-            Vector3 spawnPos = GetRandomPositionInsideRoom();
-            Instantiate(prefab, spawnPos, Quaternion.identity, transform);
+            SpawnOnePrefab(prefab);
         }
+    }
+
+    public void SpawnOnePrefab(GameObject prefab)
+    {
+        Vector3 spawnPos = GetRandomPositionInsideRoom();
+        Instantiate(prefab, spawnPos, Quaternion.identity, transform);
     }
 
     /**

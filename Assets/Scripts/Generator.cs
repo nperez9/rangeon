@@ -78,7 +78,7 @@ public class Generator : MonoBehaviour
         roomCount++;
         map[x, y] = true;
 
-        // it�s reversed, so, if it is 0.2 its 80%
+        // its reversed, so, if it is 0.2 its 80%
         bool nort = Random.value > (generalDirection == Vector2.up ? 0.2f : 0.8f);
         bool south = Random.value > (generalDirection == Vector2.down ? 0.2f : 0.8f);
         bool east = Random.value > (generalDirection == Vector2.right ? 0.2f : 0.8f);
@@ -168,8 +168,36 @@ public class Generator : MonoBehaviour
         CalculateKeyAndExit();
     }
 
+    /** 
+     *  this method will calculate the room that is the furthest away from all other rooms, 
+     *  and spawn the key and exit door in those rooms.
+     */
     private void CalculateKeyAndExit()
     {
+        float maxDist = 0;
 
+        RoomsManager keyRoom = null;
+        RoomsManager exitDoorRoom = null;
+
+        foreach (RoomsManager aRoom in roomObjects)
+        {
+            foreach (RoomsManager bRoom in roomObjects)
+            {
+                if (aRoom == bRoom)
+                    continue;
+
+                float dist = Vector2.Distance(aRoom.transform.position, bRoom.transform.position);
+
+                if (dist > maxDist)
+                {
+                    maxDist = dist;
+                    keyRoom = aRoom;
+                    exitDoorRoom = bRoom;
+                }
+            }
+        }
+
+        keyRoom.SpawnOnePrefab(keyRoom.keyPrefab);
+        exitDoorRoom.SpawnOnePrefab(exitDoorRoom.exitDoorPrefab);
     }
 }

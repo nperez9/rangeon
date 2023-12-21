@@ -9250,10 +9250,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_434
+      name: Door
       rect:
         serializedVersion: 2
-        x: 51
+        x: 52
         y: 204
         width: 16
         height: 16
@@ -9397,7 +9397,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_441
+      name: Exit_Door
       rect:
         serializedVersion: 2
         x: 170
@@ -11875,7 +11875,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_559
+      name: Key_Y
       rect:
         serializedVersion: 2
         x: 544
@@ -11896,7 +11896,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_560
+      name: Key_blue
       rect:
         serializedVersion: 2
         x: 561
@@ -11917,7 +11917,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spritesheet_561
+      name: Key_Red
       rect:
         serializedVersion: 2
         x: 578
@@ -22307,10 +22307,15 @@ TextureImporter:
       Coin: -202282120
       Coin2: -13521169
       Crab: -2143229980
+      Door: -1447459806
+      Exit_Door: 937139784
       Heart_Pickable: -2036213406
       Hearth: 535552372
       HearthEmpty: 368053408
       HearthHalf: -1211214019
+      Key_Red: 1989591235
+      Key_Y: 1276836775
+      Key_blue: 1872525995
       Necromancer: -1312330677
       Pine: 552360729
       Pine_Big: 1136297899
@@ -22737,7 +22742,6 @@ TextureImporter:
       Spritesheet_431: 289176389
       Spritesheet_432: 894718379
       Spritesheet_433: 143123967
-      Spritesheet_434: -1447459806
       Spritesheet_435: -820247530
       Spritesheet_436: -1621794125
       Spritesheet_437: 1958115269
@@ -22745,7 +22749,6 @@ TextureImporter:
       Spritesheet_439: -763134228
       Spritesheet_44: -1980131274
       Spritesheet_440: -1941538541
-      Spritesheet_441: 937139784
       Spritesheet_442: -209136655
       Spritesheet_443: 1489770274
       Spritesheet_444: -278479099
@@ -22863,10 +22866,7 @@ TextureImporter:
       Spritesheet_556: -157066650
       Spritesheet_557: -1905391257
       Spritesheet_558: -679933450
-      Spritesheet_559: 1276836775
       Spritesheet_56: 2141023794
-      Spritesheet_560: 1872525995
-      Spritesheet_561: 1989591235
       Spritesheet_562: 264337665
       Spritesheet_563: -1844904740
       Spritesheet_564: 416031214

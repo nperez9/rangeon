@@ -66,8 +66,8 @@ MonoBehaviour:
   enemyPrefab: {fileID: 2308072634357482823, guid: daedeb4ca156343458c7b28ff26149da, type: 3}
   coinPrefab: {fileID: 2568984596804179407, guid: 3e769c4eca938bf42820fd3ece3c4eee, type: 3}
   healthPrefab: {fileID: 6813201419980054805, guid: 1c6c4fcd7ea179947bf89f97870821fe, type: 3}
-  keyPrefab: {fileID: 0}
-  exitDoorPrefab: {fileID: 0}
+  keyPrefab: {fileID: 6584185336074982364, guid: 5327c0a1061c8cc43bc3da4a35f2bfdb, type: 3}
+  exitDoorPrefab: {fileID: 6855892641986783106, guid: 618cba80725fd98419ba325e25aab863, type: 3}
   detailSprites:
   - {fileID: 1691541806, guid: aacb2d65b31c95a45aeb17aee304697d, type: 3}
   - {fileID: 1850880981, guid: aacb2d65b31c95a45aeb17aee304697d, type: 3}
