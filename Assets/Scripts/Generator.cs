@@ -40,6 +40,16 @@ public class Generator : MonoBehaviour
         Generate();
     }
 
+    public void OnPlayerMove()
+    {
+        // get the position of the player
+        Vector2 playerPos = FindObjectOfType<PlayerController>().transform.position;
+        // get the position of the room that the player is in, in terms of map scale.
+        Vector2 roomPos = new Vector2(((int)playerPos.x + 6) / 12, ((int)playerPos.y + 6) / 12);
+        // generate a newer version of the map
+        UI.instance.map.texture = MapTextureGenerator.Generate(map, roomPos);
+    }
+
     public void Generate()
     {
         map = new bool[mapWidth, mapHeight];
@@ -47,6 +57,7 @@ public class Generator : MonoBehaviour
         InstanciateRooms();
         // translate to global pos
         FindObjectOfType<PlayerController>().transform.position = firstRoomPos * 12;
+        UI.instance.UpdateMiniMap(MapTextureGenerator.Generate(map, firstRoomPos));
     }
 
     private void CheckRoom(int x, int y, int remaining, Vector2 generalDirection, bool firstRoom = false)

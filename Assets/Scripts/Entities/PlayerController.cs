@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
             transform.position += new Vector3(dir.x, dir.y, 0);
             // Moves the enemy when the player moves
             EnemyManager.instance.OnPlayerMove();
+            // Moves the map
+            Generator.instance.OnPlayerMove();
         }
     }
 
@@ -106,6 +108,7 @@ public class PlayerController : MonoBehaviour
     {
         currentHP -= damage;
         StartCoroutine(DamageFlash());
+        UI.instance.UpdateHearts(currentHP);
 
         if (currentHP <= 0)
         {
@@ -144,6 +147,7 @@ public class PlayerController : MonoBehaviour
     public void AddCoins(int amount)
     {
         coins += amount;
+        UI.instance.UpdateCoins(coins);
         // TODO: update UI
     }
 
@@ -156,7 +160,8 @@ public class PlayerController : MonoBehaviour
             currentHP = maxHP;
             return false;
         }
+
+        UI.instance.UpdateHearts(currentHP);
         return true;
-        // TODO: update UI
     }
 }

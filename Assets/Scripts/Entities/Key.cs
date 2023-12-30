@@ -9,7 +9,8 @@ public class Key : MonoBehaviour
         if (collision.CompareTag(Tags.PLAYER))
         {
             collision.GetComponent<PlayerController>().hasKey = true;
-            // TODO: Play sound & update UI
+            // TODO: Play sound\
+            UI.instance.ToggleKeyIcon(true);
             Destroy(gameObject);
         }
     }
