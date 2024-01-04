@@ -36,7 +36,9 @@ public class Generator : MonoBehaviour
 
     private void Start()
     {
-        Random.InitState(9);
+        int seed = PlayerPrefs.GetInt("Seed");
+        seed = seed != 0 ? seed : 9;
+        Random.InitState(seed);
         Generate();
     }
 

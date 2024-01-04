@@ -12,6 +12,11 @@ public class EnemyManager : MonoBehaviour
         instance = this;
     }
 
+    public void AddEnemy(Enemy enemy)
+    {
+        enemies.Add(enemy);
+    }
+
     public void OnPlayerMove()
     {
         // Corrutine to prevent enemy moves inside the player

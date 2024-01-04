@@ -39,7 +39,7 @@ public class RoomsManager : MonoBehaviour
 
         if (Random.value < Generator.instance.enemySpawnChance)
         {
-            SpawnRandomPrefabs(enemyPrefab, 1, Generator.instance.maxEnemiesPerRoom + 1);
+            SpawnRandomPrefabs(enemyPrefab, 1, Generator.instance.maxEnemiesPerRoom + 1, true);
         }
 
         if (Random.value < Generator.instance.coinSpawnChance)
@@ -59,19 +59,23 @@ public class RoomsManager : MonoBehaviour
         }
     }
 
-    public void SpawnRandomPrefabs(GameObject prefab, int min = 0, int max = 0)
+    public void SpawnRandomPrefabs(GameObject prefab, int min = 0, int max = 0, bool isEnemy = false)
     {
         int spawnCount = Random.Range(min, max);
         for (int i = 0; i < spawnCount; i++)
         {
-            SpawnOnePrefab(prefab);
+            GameObject spawnInstance = SpawnOnePrefab(prefab);
+            if (isEnemy)
+            {
+                EnemyManager.instance.AddEnemy(spawnInstance.GetComponent<Enemy>());
+            }
         }
     }
 
-    public void SpawnOnePrefab(GameObject prefab)
+    public GameObject SpawnOnePrefab(GameObject prefab)
     {
         Vector3 spawnPos = GetRandomPositionInsideRoom();
-        Instantiate(prefab, spawnPos, Quaternion.identity, transform);
+        return Instantiate(prefab, spawnPos, Quaternion.identity, transform);
     }
 
     /**
