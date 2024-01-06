@@ -34,14 +34,6 @@ public class Generator : MonoBehaviour
         instance = this;
     }
 
-    private void Start()
-    {
-        int seed = PlayerPrefs.GetInt("Seed");
-        seed = seed != 0 ? seed : 9;
-        Random.InitState(seed);
-        Generate();
-    }
-
     public void OnPlayerMove()
     {
         // get the position of the player

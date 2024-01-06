@@ -10,7 +10,7 @@ public class Door : MonoBehaviour
         {
             if (collision.GetComponent<PlayerController>().hasKey)
             {
-                Debug.Log("You win!");
+                GameManager.instance.GoToNextLevel();
             }
         }
     }
