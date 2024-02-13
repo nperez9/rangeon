@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
         level++;
         baseSeed++;
+        Random.InitState(baseSeed);
         // generate a new level with the updated baseSeed
         Generator.instance.Generate();
         // transfer the previous game data to the new level
@@ -65,6 +66,9 @@ public class GameManager : MonoBehaviour
     {
         prevRoomPlayerHealth = player.currentHP;
         prevRoomPlayerCoins = player.coins;
+        level = level;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        OnSceneLoaded(SceneManager.GetActiveScene(), LoadSceneMode.Single);
+
     }
 }
